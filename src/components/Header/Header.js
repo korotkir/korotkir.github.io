@@ -1,17 +1,16 @@
 import './Header.css'
+import Switch from '../UI/Switch/Switch'
 
 const Header = () => (
   <header className="header">
-    <p className="header__logo" href="#">Snicks Picky</p>
-    <ul className="header__menu">
-      <li><a href="#">About</a></li>
-      <li><a href="#">Skills</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Portfolio</a></li>
+    <p className="logo" href="#">Snicks Picky</p>
+    <ul className="menu">
+      <li className="menu__item"><a className="menu__link" href="#">About</a></li>
+      <li className="menu__item"><a className="menu__link" href="#">Skills</a></li>
+      <li className="menu__item"><a className="menu__link" href="#">Services</a></li>
+      <li className="menu__item"><a className="menu__link" href="#">Portfolio</a></li>
     </ul>
-    <div className='header__theme'>
-      <div className='header__circle' />
-    </div>
+    <Switch />
   </header>
 )
 

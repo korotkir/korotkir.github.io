@@ -17,34 +17,34 @@
   border: 1px solid #6D8093;
 }
 
-.header__logo {
+.logo {
   font-size: 36px;
   text-decoration: none;
 }
 
-.header__menu {
+.menu {
   display: flex;
   flex-direction: row;
   font-size: 16px;
   list-style-type: none;
 }
 
-.header__menu li {
+.menu__item {
   margin-right: 47px;
   text-transform: uppercase;
 }
 
-.header__menu li a {
+.menu__link {
   text-decoration: none;
   position: relative;
 }
-.header__menu li a:visited {
+.menu__link:visited {
   color: #5671A6;
 }
-.header__menu li a:hover {
+.menu__link:hover {
   color: #B3CBD9;
 }
-.header__menu li a::before {
+.menu__link::before {
   content: "";
   position: absolute;
   left: 0;
@@ -55,25 +55,8 @@
   transition: width 0.35s;
   border-radius: 50px;
 }
-.header__menu li a:hover::before {
+.menu__link:hover::before {
   width: 100%;
-}
-
-.header__theme {
-  width: 54px;
-  height: 30px;
-  background: none;
-  border-radius: 50px;
-  border: 2px solid #5671A6;
-  box-sizing: border-box;
-}
-
-.header__circle {
-  margin: 4px 5px 6px 25px;
-  width: 18px;
-  height: 18px;
-  border-radius: 50px;
-  background-color: #5671A6;
 }
 
 /*# sourceMappingURL=Header.css.map */
