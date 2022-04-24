@@ -1,0 +1,31 @@
+.call {
+  text-align: center;
+  margin-top: 40px;
+  width: 164px;
+  height: 44px;
+  background-color: #5671A6;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+.call:hover {
+  background: linear-gradient(36deg, #5671A6, #B3CBD9);
+}
+
+.callIcon {
+  visibility: hidden;
+  height: 1px;
+  width: 1px;
+}
+
+.call:hover .callIcon {
+  visibility: visible;
+  transition: height 1s;
+  height: 44px;
+  width: 31px;
+}
+
+/*# sourceMappingURL=CallToActionButton.css.map */

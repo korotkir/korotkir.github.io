@@ -34,29 +34,4 @@
   text-transform: uppercase;
 }
 
-.menu__link {
-  text-decoration: none;
-  position: relative;
-}
-.menu__link:visited {
-  color: #5671A6;
-}
-.menu__link:hover {
-  color: #B3CBD9;
-}
-.menu__link::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -5px;
-  width: 0;
-  height: 2px;
-  background-color: #B3CBD9;
-  transition: width 0.35s;
-  border-radius: 50px;
-}
-.menu__link:hover::before {
-  width: 100%;
-}
-
 /*# sourceMappingURL=Header.css.map */

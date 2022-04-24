@@ -1,0 +1,10 @@
+.socialItem {
+  padding-right: 15px;
+}
+
+.socialItem img:hover {
+  transform: translateY(-10px);
+  transition: transform 0.3s;
+}
+
+/*# sourceMappingURL=Social.css.map */
