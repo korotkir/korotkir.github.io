@@ -11,21 +11,35 @@
   font-weight: 600;
   line-height: 24px;
 }
-.call:hover {
-  background: linear-gradient(36deg, #5671A6, #B3CBD9);
+
+.call span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
 }
 
-.callIcon {
+.call span:after {
+  content: url("./img/message.svg");
+  position: absolute;
   visibility: hidden;
-  height: 1px;
-  width: 1px;
+  transform: scale(0.1);
 }
 
-.call:hover .callIcon {
+.call:hover {
+  background: linear-gradient(104.82deg, #5671A6 11.88%, #B3CBD9 80.84%);
+}
+
+.call:hover span {
+  padding-right: 45px;
+}
+
+.call:hover span:after {
   visibility: visible;
-  transition: height 1s;
-  height: 44px;
-  width: 31px;
+  right: 0;
+  top: 3px;
+  transform: scale(1);
+  transition: transform 0.5s;
 }
 
 /*# sourceMappingURL=CallToActionButton.css.map */

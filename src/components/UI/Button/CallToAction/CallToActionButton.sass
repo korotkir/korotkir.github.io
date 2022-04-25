@@ -1,8 +1,4 @@
 .call
-  //display: flex
-  //flex-direction: row
-  //align-items: center
-  //justify-content: center
   text-align: center
   margin-top: 40px
   width: 164px
@@ -15,17 +11,51 @@
   font-weight: 600
   line-height: 24px
 
-  &:hover
-    //padding: 0 15px
-    background: linear-gradient(36deg, #5671A6, #B3CBD9)
+.call span
+  cursor: pointer
+  display: inline-block
+  position: relative
+  transition: 0.5s
 
-.callIcon
+.call span:after
+  content: url("./img/message.svg")
+  position: absolute
+  //opacity: 0
   visibility: hidden
-  height: 1px
-  width: 1px
+  transform: scale(0.1)
+  //right: 45px
+  //transition: 0s
 
-.call:hover .callIcon
+.call:hover
+  background: linear-gradient(104.82deg, #5671A6 11.88%, #B3CBD9 80.84%)
+
+.call:hover span
+  padding-right: 45px
+
+.call:hover span:after
+  //opacity: 1
   visibility: visible
-  transition: height 1s
-  height: 44px
-  width: 31px
+  right: 0
+  top: 3px
+  transform: scale(1)
+  transition: transform 0.5s
+
+
+
+
+
+
+//  &:hover
+//    //padding: 0 15px
+//    background: linear-gradient(36deg, #5671A6, #B3CBD9)
+//
+//.callIcon
+//  visibility: hidden
+//  height: 1px
+//  width: 1px
+//
+//.call:hover .callIcon
+//  visibility: visible
+//  transition: height 1s
+//  height: 44px
+//  width: 31px

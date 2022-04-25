@@ -3,8 +3,7 @@ import icon from './img/message.svg'
 
 const CallToActionButton = (props) => (
   <button className="call">
-    {props.action}
-    <img className="callIcon" src={icon} />
+    <span>{props.action}</span>
   </button>
 )
 
