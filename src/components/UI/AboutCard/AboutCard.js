@@ -1,14 +1,17 @@
 import './AboutCard.css'
-import fire from './img/fire.svg'
 
-const AboutCard = () => (
+const AboutCard = (props) => {
+  const styles = String(props.total).length > 1 ? 'twoDigit' : 'oneDigit'
+
+  return (
   <div className="AboutCard">
-    <img className="AboutCard__icon" src={fire}/>
     <div className="AboutCard__stat">
-      <span className="AboutCard__title">Year <br/> experience</span>
-      <span className="AboutCard__count">6</span>
+      <div className="AboutCard__logo">{props.icon}</div>
+      <span className="AboutCard__title">{props.text}</span>
     </div>
+    <span className={`AboutCard__count ${styles}`}>{props.total}</span>
   </div>
-)
+  )
+}
 
 export default AboutCard
