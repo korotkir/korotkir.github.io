@@ -1,7 +1,7 @@
 import './App.css';
 import Header from './components/Header/Header'
 import Profile from './components/Profile/Profile'
-import About from './components/page/About/About'
+import AboutPage from './components/page/AboutPage/AboutPage'
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
       <Header />
       <main className='container'>
         <Profile />
-        <About />
+        <AboutPage />
       </main>
     </div>
   );

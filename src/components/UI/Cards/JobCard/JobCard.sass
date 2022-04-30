@@ -1,0 +1,45 @@
+.JobCard
+  display: flex
+  flex-direction: column
+  width: 200px
+  height: 150px
+  border: 1px solid #DBDBDB
+  box-sizing: border-box
+  border-radius: 10px
+  padding: 0px 10px
+  margin: 0
+
+  &:hover
+    background: rgba(255, 255, 255, 0.5)
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25)
+
+.JobCard__title
+  font-weight: 600
+  font-size: 14px
+  line-height: 21px
+  margin-top: 15px
+  transition: all 0.3s
+
+.JobCard:hover .JobCard__title
+  font-weight: 600
+  font-size: 20px
+  line-height: 30px
+  color: #5671A6
+  transition: all 0.3s
+  margin-top: 17px
+
+.JobCard__info
+  position: absolute
+  margin-top: 91px
+
+.JobCard__location
+  font-style: normal
+  font-weight: 600
+  font-size: 14px
+  line-height: 21px
+
+.JobCard__years
+  font-weight: 400
+  font-size: 12px
+  line-height: 18px
+  color: #616161

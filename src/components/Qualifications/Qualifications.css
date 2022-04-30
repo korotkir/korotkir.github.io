@@ -1,0 +1,62 @@
+.Qualifications__header {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  padding-top: 70px;
+  margin-bottom: 15px;
+}
+
+.Qualifications__header h1 {
+  font-size: 32px;
+  line-height: 32px;
+  color: #5671A6;
+}
+
+.Qualifications__header span {
+  margin-left: 15px;
+  font-size: 12px;
+  line-height: 18px;
+  color: #616161;
+}
+
+.Tabs__header {
+  display: flex;
+  flex-direction: row;
+}
+
+.Tabs__header button {
+  display: flex;
+  height: 100%;
+  align-items: end;
+  color: #383838;
+  padding-right: 126px;
+  background: none;
+  border: 0;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 12px;
+}
+
+.Tabs__icon {
+  margin-right: 5px;
+}
+
+hr {
+  display: block;
+  margin: 7px 0 22px 0;
+  height: 1px;
+  border: none;
+  background: #DBDBDB;
+  color: #DBDBDB;
+}
+
+.Tabs__work {
+  display: flex;
+  flex-direction: row;
+}
+
+.Tabs__card {
+  margin: 18px;
+}
+
+/*# sourceMappingURL=Qualifications.css.map */
