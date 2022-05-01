@@ -24,7 +24,7 @@
   flex-direction: row;
 }
 
-.Tabs__header button {
+.Tabs__button {
   display: flex;
   height: 100%;
   align-items: end;
@@ -35,6 +35,11 @@
   font-weight: 600;
   font-size: 16px;
   line-height: 12px;
+}
+.Tabs__button:hover * {
+  color: #5671A6;
+  fill: #5671A6;
+  transition: all 300ms ease-in-out;
 }
 
 .Tabs__icon {
@@ -50,13 +55,13 @@ hr {
   color: #DBDBDB;
 }
 
-.Tabs__work {
+.Tabs__work, .Tabs__education {
   display: flex;
   flex-direction: row;
 }
 
-.Tabs__card {
-  margin: 18px;
+.Tabs__education {
+  display: none;
 }
 
 /*# sourceMappingURL=Qualifications.css.map */

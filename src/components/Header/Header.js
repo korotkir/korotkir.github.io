@@ -7,10 +7,10 @@ const Header = () => (
     <p className="logo" href="#">Snicks Picky</p>
     <nav>
       <ul className="menu">
-        <Nav name={'About'} link={'#'} />
-        <Nav name={'Skills'} link={'#'} />
-        <Nav name={'Services'} link={'#'} />
-        <Nav name={'Portfolio'} link={'#'} />
+        <Nav link={'#'} >About</Nav>
+        <Nav link={'#'} >Skills</Nav>
+        <Nav link={'#'} >Services</Nav>
+        <Nav link={'#'} >Portfolio</Nav>
       </ul>
     </nav>
     <Switch />

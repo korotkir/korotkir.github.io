@@ -1,11 +1,15 @@
 import './JobCard.css'
+import {ReactComponent as Date} from '../../Icons/date.svg'
 
-const JobCard = () => (
-  <div class="JobCard">
-    <h4 class="JobCard__title">Computer <br/> Engineer</h4>
-    <div class="JobCard__info">
-      <div class="JobCard__location">Peru - University</div>
-      <span class="JobCard__years">2009 - 2014</span>
+const JobCard = (props) => (
+  <div className="JobCard">
+    <h4 className="JobCard__title">{props.position}</h4>
+    <div className="JobCard__info">
+      <div className="JobCard__location">{`${props.location} - ${props.organization}`}</div>
+      <span className="JobCard__years">
+        <Date className="JobCard__icon"/>
+        {props.years}
+      </span>
     </div>
   </div>
 )

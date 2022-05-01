@@ -15,13 +15,13 @@ const transitionStyle = {
   entering: { transform: 'translateX(21px)', transition: 'transform 0.1s' },
   entered: { transform: 'translateX(21px)' },
   exiting: { transform: 'translateX(21px)' },
-  exited: { transform: 'translateX(0)', transition: 'transform 0.1s' },
+  exited: { transform: 'translateX(0)', transition: 'transform 0.1s'},
 };
 
 const Switch = () => {
   const [switched, setSwitched] = useState(false)
 
-  console.log(switched)
+
   return (
   <div className='theme'>
     <Transition

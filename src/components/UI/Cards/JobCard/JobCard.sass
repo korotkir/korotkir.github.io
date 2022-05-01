@@ -7,13 +7,14 @@
   box-sizing: border-box
   border-radius: 10px
   padding: 0px 10px
-  margin: 0
+  margin: 0 15px
 
   &:hover
     background: rgba(255, 255, 255, 0.5)
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25)
 
 .JobCard__title
+  word-spacing: 100px
   font-weight: 600
   font-size: 14px
   line-height: 21px
@@ -39,7 +40,13 @@
   line-height: 21px
 
 .JobCard__years
+  display: flex
+  align-items: end
+  margin-top: 5px
   font-weight: 400
   font-size: 12px
-  line-height: 18px
+  line-height: 10px
   color: #616161
+
+.JobCard__icon
+  margin-right: 7px
