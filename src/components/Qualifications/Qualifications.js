@@ -2,7 +2,8 @@ import './Qualifications.css'
 import {ReactComponent as Work} from '../UI/Icons/work.svg'
 import {ReactComponent as Educations} from '../UI/Icons/educations.svg'
 import JobCard from '../UI/Cards/JobCard/JobCard'
-import {useState} from 'react'
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+//import 'react-tabs/style/react-tabs.css';
 
 const Qualifications = (props) => {
   return (
@@ -12,26 +13,27 @@ const Qualifications = (props) => {
       <span>My personal journey</span>
     </div>
 
+    <Tabs className="Tabs">
+      <TabList className="Tabs__header">
 
-    <div className="Tabs">
-      <div className="Tabs__header">
-        <button
+        <Tab
           className="Tabs__Education Tabs__button"
         >
           <Educations className="Tabs__icon"/>
           <span className="Tabs__title">Education</span>
-        </button>
-        <button
+        </Tab>
+
+        <Tab
           className="Tabs__Work Tabs__button"
         >
           <Work className="Tabs__icon"/>
           <span className="Tabs__title">Work</span>
-        </button>
-      </div>
+        </Tab>
+
+      </TabList>
       <hr/>
-      <div
-        className="Tabs__education"
-      >
+
+      <TabPanel className="Tabs__education">
         {
           props.education.map((el, i) => {
             return <JobCard
@@ -43,10 +45,8 @@ const Qualifications = (props) => {
             />
           })
         }
-      </div>
-      <div
-        className="Tabs__work"
-      >
+      </TabPanel>
+      <TabPanel className="Tabs__work">
         {
           props.work.map((el, i) => {
             return <JobCard
@@ -58,8 +58,9 @@ const Qualifications = (props) => {
             />
           })
         }
-      </div>
-    </div>
+      </TabPanel>
+
+    </Tabs>
 
 
   </section>
