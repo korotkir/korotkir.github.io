@@ -13,7 +13,8 @@ const Qualifications = (props) => {
       <span>My personal journey</span>
     </div>
 
-    <Tabs className="Tabs">
+    <Tabs
+      className="Tabs">
       <TabList className="Tabs__header">
 
         <Tab
