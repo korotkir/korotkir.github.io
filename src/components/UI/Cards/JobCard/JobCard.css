@@ -59,4 +59,12 @@
   margin-right: 7px;
 }
 
+@media (max-width: 1000px) {
+  .JobCard {
+    min-width: 150px;
+    width: 150px;
+    height: 150px;
+  }
+}
+
 /*# sourceMappingURL=JobCard.css.map */

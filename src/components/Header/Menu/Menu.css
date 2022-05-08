@@ -1,0 +1,32 @@
+.menu {
+  flex-direction: row;
+  font-size: 16px;
+  list-style-type: none;
+}
+
+.menu__item {
+  margin-right: 47px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1000px) {
+  nav {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .menu {
+    flex-direction: column;
+    margin-top: 30px;
+    align-content: center;
+  }
+
+  .menu__item {
+    margin-bottom: 10px;
+    margin-right: 0;
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=Menu.css.map */

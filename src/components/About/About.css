@@ -24,10 +24,4 @@
   flex-wrap: wrap;
 }
 
-@media (max-width: 1000px) {
-  .About__cards {
-    justify-content: space-around;
-  }
-}
-
 /*# sourceMappingURL=About.css.map */

@@ -23,4 +23,13 @@
   width: 100%;
 }
 
+@media (max-width: 1000px) {
+  .menu__link:hover {
+    color: gray;
+  }
+  .menu__link::before {
+    background-color: gray;
+  }
+}
+
 /*# sourceMappingURL=Nav.css.map */
