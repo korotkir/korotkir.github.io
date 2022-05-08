@@ -1,9 +1,10 @@
 import './Menu.css'
 import Nav from '../../UI/Nav/Nav'
-import {useEffect} from 'react'
 
 const Menu = (props) => {
-  const styles = props.menu ? {display: 'flex'} : {display: 'none'}
+
+  const deviceWidth = window.screen.width >= 1000
+  const styles = props.menu || deviceWidth ? {display: 'flex'} : {display: 'none'}
 
   return (
     <nav>

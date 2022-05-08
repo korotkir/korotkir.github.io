@@ -1,6 +1,4 @@
 import './Header.css'
-import Switch from '../UI/Switch/Switch'
-import Nav from '../UI/Nav/Nav'
 import Menu from './Menu/Menu'
 import {ReactComponent as MenuIcon} from '../../img/menu.svg'
 import {useState} from 'react'
