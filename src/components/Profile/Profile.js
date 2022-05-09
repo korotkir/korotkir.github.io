@@ -8,7 +8,7 @@ import github_icon from './img/github_icon.svg'
 import Social from '../UI/Social/Social'
 import CallToActionButton from '../UI/Button/CallToAction/CallToActionButton'
 
-const Profile = () => {
+const Profile = (props) => {
   return (
     <section className="profile">
       <img className="profile__avatar" src={profile} alt="#"/>
@@ -22,7 +22,7 @@ const Profile = () => {
         <Social socialLink={''} icon={twitter_icon}/>
         <Social socialLink={''} icon={vk_icon}/>
         <Social socialLink={''} icon={facebook_icon}/>
-        <Social socialLink={''} icon={github_icon}/>
+        <Social socialLink={props.ghLink} icon={github_icon}/>
       </div>
      <CallToActionButton action={'Contact Me'} />
     </section>

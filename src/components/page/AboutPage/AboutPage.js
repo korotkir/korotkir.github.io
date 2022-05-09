@@ -1,16 +1,15 @@
 import './AboutPage.css'
 import About from '../../About/About'
 import Qualifications from '../../Qualifications/Qualifications'
-import {ReactComponent as Books} from '../../UI/Icons/fire.svg'
+import {ReactComponent as Books} from '../../UI/Icons/books.svg'
 import {ReactComponent as Fire} from '../../UI/Icons/fire.svg'
 import {ReactComponent as Home} from '../../UI/Icons/home.svg'
 
-const AboutPage = () => {
-
+const AboutPage = (props) => {
   const AboutCard = [
-    {icon: <Fire />, title: 'Years experience', total: 20},
-    {icon: <Books />, title: 'Completed projects', total: 6},
-    {icon: <Home />, title: 'Companies worked', total: 4},
+    {icon: <Fire />, title: 'Созданных репозиториев', total: props.publicRepos},
+    {icon: <Books />, title: 'Выполненных проектов', total: 6},
+    {icon: <Home />, title: 'Лет изучения', total: 2},
   ]
 
   const EducationCard = [
