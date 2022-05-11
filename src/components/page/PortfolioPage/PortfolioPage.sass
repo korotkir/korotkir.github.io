@@ -1,14 +1,62 @@
 .PortfolioPage
+  font-family: 'Poppins', serif
+  font-style: normal
   display: flex
   flex-grow: 3
   flex-direction: column
-  justify-content: flex-start
-  align-content: center
-  padding: 10px 50px
+  justify-content: space-between
+  align-items: center
+  padding: 10px 50px 0 50px
   width: 100%
+
+.PageTitle
+  font-style: normal
+  font-weight: 600
+  font-size: 32px
+  line-height: 48px
+  color: #383838
+
+.PageDesc
+  font-weight: 500
+  font-size: 14px
+  line-height: 21px
+  color: #686868
+  margin-bottom: 30px
+
+.slider
+  width: 80%
+  height: 40%
+  font-size: 54px
+  border: 1px solid
+  margin-bottom: 80px
+
+footer
+  display: flex
+  flex-direction: column
+  justify-content: center
+  background: linear-gradient(97.31deg, rgba(86, 113, 166, 0.3) 49.55%, rgba(179, 203, 217, 0.3) 100.33%)
+  height: 30%
+  width: calc(100% + 100px)
+  color: #FFFFFF
+
+.FooterHeader
+  font-weight: 600
+  font-size: 24px
+  line-height: 36px
+  color: #FFFFFF
+  margin-left: 55px
+
+.FooterDesc
+  font-weight: 500
+  font-size: 14px
+  line-height: 21px
+  margin-left: 55px
 
 @media (max-width: 1000px)
   .PortfolioPage
     padding: 0
     margin: 0 auto
     align-items: center
+
+  footer
+    height: 250px
