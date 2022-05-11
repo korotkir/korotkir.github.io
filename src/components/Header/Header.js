@@ -2,12 +2,11 @@ import './Header.css'
 import Menu from './Menu/Menu'
 import {ReactComponent as MenuIcon} from '../../img/menu.svg'
 import {useState} from 'react'
+import {NavLink} from 'react-router-dom'
 
 const Header = () => {
 
   const [menu, setMenu] = useState(false)
-
-  console.log('menu: ', menu)
 
   const adaptiveMenuHandler = () => {
     setMenu(!menu)
@@ -16,7 +15,7 @@ const Header = () => {
   return (
     <header className="header">
       <div className="topBlock">
-        <p className="logo" href="#">Snicks Picky</p>
+        <NavLink className="logo" to="/">Snicks Picky</NavLink>
         <MenuIcon onClick={adaptiveMenuHandler} className="adaptive__menu"/>
       </div>
       {/*<Switch />*/}

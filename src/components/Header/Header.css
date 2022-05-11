@@ -26,6 +26,7 @@
 .logo {
   font-size: 36px;
   text-decoration: none;
+  color: #5671A6;
   flex-basis: 60%;
   cursor: pointer;
 }

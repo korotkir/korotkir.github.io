@@ -1,0 +1,19 @@
+.SkillsPage {
+  display: flex;
+  flex-grow: 3;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+  padding: 10px 50px;
+  width: 100%;
+}
+
+@media (max-width: 1000px) {
+  .SkillsPage {
+    padding: 0;
+    margin: 0 auto;
+    align-items: center;
+  }
+}
+
+/*# sourceMappingURL=SkillsPage.css.map */

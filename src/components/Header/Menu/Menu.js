@@ -12,10 +12,10 @@ const Menu = (props) => {
         className="menu"
         style={styles}
       >
-        <Nav link={'#'} >About</Nav>
-        <Nav link={'#'} >Skills</Nav>
-        <Nav link={'#'} >Services</Nav>
-        <Nav link={'#'} >Portfolio</Nav>
+        <Nav link={'/'}>About</Nav>
+        <Nav link={'/skills'}>Skills</Nav>
+        <Nav link={'/services'}>Services</Nav>
+        <Nav link={'/portfolio'}>Portfolio</Nav>
       </ul>
     </nav>
   )

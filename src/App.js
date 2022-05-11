@@ -3,17 +3,23 @@ import Header from './components/Header/Header'
 import Profile from './components/Profile/Profile'
 import AboutPage from './components/page/AboutPage/AboutPage'
 import {useEffect, useState} from 'react'
+import {Route, Routes} from 'react-router-dom'
+import PortfolioPage from './components/page/PortfolioPage/PortfolioPage'
+import ServicesPage from './components/page/ServicesPage/ServicesPage'
+import SkillsPage from './components/page/SkillsPage/Skills Page'
+
+const clientID = process.env.REACT_APP_GH_TOKEN
+const user = 'korotkir'
 
 function App() {
 
   const [data, setData] = useState({})
-  const user = 'korotkir'
 
   useEffect(() => {
     const getGithub = async () => {
       await fetch(`https://api.github.com/users/${user}`, {
         headers: {
-          authorization: "token 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"
+          authorization: `token ${clientID}`
         }
       })
         .then((data) => {
@@ -25,7 +31,6 @@ function App() {
     getGithub()
       .catch((e) => console.log(e))
 
-    console.log(data)
   }, [])
 
 
@@ -35,7 +40,12 @@ function App() {
       <Header />
       <main className='container'>
         <Profile ghLink={data.html_url}/>
-        <AboutPage publicRepos={data.public_repos} />
+        <Routes>
+        <Route path={"/"} element={<AboutPage publicRepos={data.public_repos} />} />
+        <Route path={"/portfolio"} element={<PortfolioPage />} />
+        <Route path={"/services"} element={<ServicesPage />} />
+        <Route path={"/skills"} element={<SkillsPage />} />
+        </Routes>
       </main>
     </div>
   );
