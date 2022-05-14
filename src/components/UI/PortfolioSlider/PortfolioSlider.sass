@@ -1,8 +1,60 @@
-.slide
-  font-size: 14px
+.slider__main
+  font-family: 'Poppins'
   display: flex
-  flex-direction: column
+  flex-direction: row
+  justify-content: center
+  height: 276px
+  width: 100%
 
-.slide__screen img
+.slider__prev, .slider__next
+  align-self: center
+
+.slider__slides
+  display: flex
+  flex-direction: row
+  max-width: 812px
+  overflow: hidden
+
+.slide
+  display: flex
+  flex-direction: row
+  align-items: center
+  max-width: 812px
+
+
+.slide__screen
   width: 428px
   height: 238px
+
+.slide__desc
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  align-self: stretch
+  width: 300px
+  padding: 50px 42px
+
+.slide__head
+  color: #383838
+  font-style: normal
+  font-weight: 600
+  font-size: 24px
+  line-height: 36px
+
+.slide__info
+  font-style: normal
+  font-weight: 500
+  font-size: 14px
+  line-height: 21px
+  color: #747474
+
+.slider__navDots
+  display: flex
+  justify-content: center
+  align-items: center
+  padding: 10px
+
+.slider__navDots *
+  margin-right: 12px
+
+
