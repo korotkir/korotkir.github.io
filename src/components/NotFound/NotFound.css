@@ -1,0 +1,15 @@
+.NotFound {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #5671A6;
+}
+
+.NotFound p {
+  color: white;
+  font-size: 286px;
+}
+
+/*# sourceMappingURL=NotFound.css.map */

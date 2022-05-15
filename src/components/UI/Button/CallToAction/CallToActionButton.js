@@ -2,7 +2,7 @@ import './CallToActionButton.css'
 
 const CallToActionButton = (props) => (
   <button className="call">
-    <span>{props.action}</span>
+    <span>{props.children}</span>
   </button>
 )
 

@@ -9,8 +9,8 @@ const Qualifications = (props) => {
   return (
   <section className="Qualifications">
     <div className="Qualifications__header">
-      <h1>Qualifications</h1>
-      <span>My personal journey</span>
+      <h1>Квалификация</h1>
+      <span>Мой личный путь</span>
     </div>
 
     <Tabs
@@ -21,14 +21,14 @@ const Qualifications = (props) => {
           className="Tabs__Education Tabs__button"
         >
           <Educations className="Tabs__icon"/>
-          <span className="Tabs__title">Education</span>
+          <span className="Tabs__title">Обучение</span>
         </Tab>
 
         <Tab
           className="Tabs__Work Tabs__button"
         >
           <Work className="Tabs__icon"/>
-          <span className="Tabs__title">Work</span>
+          <span className="Tabs__title">Работа</span>
         </Tab>
 
       </TabList>

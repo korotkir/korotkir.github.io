@@ -4,8 +4,8 @@ import AboutCard from '../UI/Cards/AboutCard/AboutCard'
 
 const About = (props) => (
   <section className='About__about'>
-    <h1>About</h1>
-    <p>Web developer, with extensive knowledge and years of experience, working in web technologies and UI/UX design, delivering quality work.</p>
+    <h1>Обо мне</h1>
+    <p>Занимаюсь веб-разработкой 2 года. Разбираюсь в большинстве актуальных технологий.</p>
 
     <div className="About__cards">
       {

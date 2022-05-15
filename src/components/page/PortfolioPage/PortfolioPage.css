@@ -1,12 +1,11 @@
 .PortfolioPage {
-  font-family: "Poppins", serif;
   font-style: normal;
   display: flex;
   flex-grow: 3;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 50px 0 50px;
+  padding: 50px 50px 0 50px;
   width: 100%;
 }
 
@@ -66,6 +65,11 @@ footer {
 
   footer {
     height: 250px;
+    width: calc(100% + 20px);
+  }
+
+  .FooterHeader, .FooterDesc {
+    margin-left: 10px;
   }
 }
 

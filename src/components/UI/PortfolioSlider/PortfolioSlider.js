@@ -38,7 +38,7 @@ const PortfolioSlider = (props) => {
           <Prev className="slider__prev" onClick={prevSlideHandler} />
 
           <div className="slider__slides">
-            <div style={slidesStyles} className="container">
+            <div style={slidesStyles} className="slider__container">
 
               {
                 props.data.map((slide, i) => {
@@ -48,7 +48,7 @@ const PortfolioSlider = (props) => {
                       <div className="slide__desc">
                         <h3 className="slide__head">{slide.projectName}</h3>
                         <p className="slide__info">{slide.projectDesc}</p>
-                        <StandardButton>demo</StandardButton>
+                        <a href={slide.link}><StandardButton>demo</StandardButton></a>
                       </div>
                     </div>
                   )
@@ -66,15 +66,17 @@ const PortfolioSlider = (props) => {
         <div className="slider__navDots">
           {
             props.data.map((el, i) => {
-              return (i == dotsState ? <ActiveDot key={i} /> : <Dot key={i} />)
+              return (
+                i == dotsState
+                  ? <ActiveDot
+                    className="dot"
+                    key={i} />
+                  : <Dot
+                    className="dot"
+                    key={i}
+                  />)
             })
           }
-
-          {/*<Dot />*/}
-          {/*<Dot />*/}
-          {/*<Dot />*/}
-          {/*<Dot />*/}
-          {/*<ActiveDot />*/}
         </div>
       </div>
   )

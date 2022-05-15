@@ -7,6 +7,7 @@ import {Route, Routes} from 'react-router-dom'
 import PortfolioPage from './components/page/PortfolioPage/PortfolioPage'
 import ServicesPage from './components/page/ServicesPage/ServicesPage'
 import SkillsPage from './components/page/SkillsPage/Skills Page'
+import NotFound from './components/NotFound/NotFound'
 
 const clientID = process.env.REACT_APP_GH_TOKEN
 const user = 'korotkir'
@@ -41,10 +42,11 @@ function App() {
       <main className='container'>
         <Profile ghLink={data.html_url}/>
         <Routes>
-        <Route path={"/"} element={<AboutPage publicRepos={data.public_repos} />} />
-        <Route path={"/portfolio"} element={<PortfolioPage />} />
-        <Route path={"/services"} element={<ServicesPage />} />
-        <Route path={"/skills"} element={<SkillsPage />} />
+          <Route path='*' element={<NotFound />} />
+          <Route path={"/"} element={<AboutPage publicRepos={data.public_repos} />} />
+          <Route path={"/portfolio"} element={<PortfolioPage />} />
+          {/*<Route path={"/services"} element={<ServicesPage />} />*/}
+          {/*<Route path={"/skills"} element={<SkillsPage />} />*/}
         </Routes>
       </main>
     </div>

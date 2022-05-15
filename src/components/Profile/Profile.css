@@ -42,6 +42,8 @@
 
 .profile__social {
   margin-top: 40px;
+  display: flex;
+  align-items: center;
 }
 
 @media (max-width: 1000px) {
