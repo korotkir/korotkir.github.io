@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/static/css/main.283916c1.css",
+    "main.js": "/static/js/main.67ffee56.js",
+    "static/js/787.f6e65957.chunk.js": "/static/js/787.f6e65957.chunk.js",
+    "static/media/quiz.png": "/static/media/quiz.47db75009568e9847184.png",
+    "static/media/calculate.png": "/static/media/calculate.49c22107e6a80a958c3c.png",
+    "static/media/todo.png": "/static/media/todo.63aee37a8ba605a70196.png",
+    "static/media/excel.png": "/static/media/excel.53a0a3331c5253f73377.png",
+    "static/media/snake.png": "/static/media/snake.45b96fcf78fef291b070.png",
+    "static/media/bg.png": "/static/media/bg.04e110502e9ecf2bb64b.png",
+    "static/media/github_icon.svg": "/static/media/github_icon.d103a7afce627c85f226d0b9aaaed783.svg",
+    "static/media/fire.svg": "/static/media/fire.531f609893aca6dca61e43e86804558c.svg",
+    "static/media/books.svg": "/static/media/books.59651ddc35ca872bfbc3204a0e352ecc.svg",
+    "static/media/profile.svg": "/static/media/profile.52730d88f4784f4b8309e235f6c03523.svg",
+    "static/media/message.svg": "/static/media/message.49cd7ceb9ed1ab715f5e.svg",
+    "static/media/date.svg": "/static/media/date.42a18fc231396c4d438bdd79e35f6a88.svg",
+    "static/media/work.svg": "/static/media/work.7e3cd799c5f8f6331d4337d5a28566a3.svg",
+    "static/media/home.svg": "/static/media/home.f1152ae04e2bfdcb8a5c46c12b87254b.svg",
+    "static/media/educations.svg": "/static/media/educations.d85415870b05d36492063492d692e377.svg",
+    "static/media/hh_icon.svg": "/static/media/hh_icon.88b9b62b8af7f7b16f88d62680ed1c63.svg",
+    "static/media/next.svg": "/static/media/next.e6380753bb5821848267034ab7b5b3f9.svg",
+    "static/media/prev.svg": "/static/media/prev.5372f3e31a22730787c82881397cc7ac.svg",
+    "index.html": "/index.html",
+    "static/media/menu.svg": "/static/media/menu.19fb64e1e61acba7091499ecd478a55f.svg",
+    "static/media/active.svg": "/static/media/active.490f34a688b7c46894e91dd0f10b2c9d.svg",
+    "static/media/non-active.svg": "/static/media/non-active.78fd7dcd25dbe5a1c6d9aad7a427dc69.svg",
+    "main.283916c1.css.map": "/static/css/main.283916c1.css.map",
+    "main.67ffee56.js.map": "/static/js/main.67ffee56.js.map",
+    "787.f6e65957.chunk.js.map": "/static/js/787.f6e65957.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.283916c1.css",
+    "static/js/main.67ffee56.js"
+  ]
+}
