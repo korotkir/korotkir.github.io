@@ -44,7 +44,7 @@ function App() {
         <Routes>
           <Route path='*' element={<NotFound />} />
           <Route path={"/"} element={<AboutPage publicRepos={data.public_repos} />} />
-          <Route path={"/portfolio"} element={<PortfolioPage />} />
+          <Route path={"/my-portfolio"} element={<PortfolioPage />} />
           {/*<Route path={"/services"} element={<ServicesPage />} />*/}
           {/*<Route path={"/skills"} element={<SkillsPage />} />*/}
         </Routes>
