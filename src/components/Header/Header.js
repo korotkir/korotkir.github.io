@@ -15,7 +15,7 @@ const Header = () => {
   return (
     <header className="header">
       <div className="topBlock">
-        <NavLink className="logo" to="/">Frontend Dev.</NavLink>
+        <NavLink className="logo" to="/portfolio">Frontend Dev.</NavLink>
         <MenuIcon onClick={adaptiveMenuHandler} className="adaptive__menu"/>
       </div>
       {/*<Switch />*/}
