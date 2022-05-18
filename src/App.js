@@ -3,7 +3,7 @@ import Header from './components/Header/Header'
 import Profile from './components/Profile/Profile'
 import AboutPage from './components/page/AboutPage/AboutPage'
 import {useEffect, useState} from 'react'
-import {Route, Routes} from 'react-router-dom'
+import {Navigate, Redirect, Route, Routes} from 'react-router-dom'
 import PortfolioPage from './components/page/PortfolioPage/PortfolioPage'
 import ServicesPage from './components/page/ServicesPage/ServicesPage'
 import SkillsPage from './components/page/SkillsPage/Skills Page'
@@ -43,8 +43,9 @@ function App() {
         <Profile ghLink={data.html_url}/>
         <Routes>
           <Route path='*' element={<NotFound />} />
-          <Route path={"/portfolio/main"} element={<AboutPage publicRepos={data.public_repos} />} />
-          <Route path={"/portfolio/projects"} element={<PortfolioPage />} />
+          <Route exact path="/" element={<Navigate replace to="/portfolio/main" />} />
+          <Route exact path={"/portfolio/main"} element={<AboutPage publicRepos={data.public_repos} />} />
+          <Route exact path={"/portfolio/projects"} element={<PortfolioPage />} />
           {/*<Route path={"/services"} element={<ServicesPage />} />*/}
           {/*<Route path={"/skills"} element={<SkillsPage />} />*/}
         </Routes>

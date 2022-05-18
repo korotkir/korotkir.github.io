@@ -27,9 +27,9 @@ const PortfolioSlider = (props) => {
   }
 
   const prevSlideHandler = () => {
+    const valueSlides = props.data.length - 1
     setMove(move >= 0 ? count - 812 : move + 812)
-    setDotsState(move == 0 ? 3 : dotsState - 1)
-    console.log(move)
+    setDotsState(move == 0 ? valueSlides : dotsState - 1)
   }
 
   return (
