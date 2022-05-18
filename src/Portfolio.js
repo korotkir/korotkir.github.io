@@ -15,8 +15,8 @@ export const AboutMe = {
 }
 
 export const AboutCard = [
-  {icon: <Fire />, title: 'Созданных репозиториев', total: 6},
-  {icon: <Books />, title: 'Выполненных проектов', total: 6},
+  // {icon: <Fire />, title: 'Созданных репозиториев', total: 6},
+  {icon: <Books />, title: 'Выполненных pet-проектов', total: 6},
   {icon: <Home />, title: 'Лет изучения', total: 2},
 ]
 
@@ -28,6 +28,11 @@ export const EducationCard = [
 export const WorkCard = [
   {position: 'Factory IT', location: 'Ступино', organization: 'Fujitsu Solutions', years: '2021 - н.в'},
   {position: 'Системный администратор', location: 'Ступино', organization: 'Бюджетное учреждение', years: '2018 - 2021'},
+]
+
+export const CourseCard = [
+  {position: 'React JS. Практический курс.', organization: 'Udemy', years: '2022'},
+  {position: 'Продвинутый JavaScript. Создаем Excel без фреймворков.', organization: 'Минин В.', years: '2022'}
 ]
 
 export const yourPortfolio = [

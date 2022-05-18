@@ -31,6 +31,7 @@ const Qualifications = (props) => {
           <span className="Tabs__title">Работа</span>
         </Tab>
 
+
       </TabList>
       <hr/>
 

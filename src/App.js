@@ -43,8 +43,8 @@ function App() {
         <Profile ghLink={data.html_url}/>
         <Routes>
           <Route path='*' element={<NotFound />} />
-          <Route path={"/portfolio"} element={<AboutPage publicRepos={data.public_repos} />} />
-          <Route path={"/projects"} element={<PortfolioPage />} />
+          <Route path={"/portfolio/main"} element={<AboutPage publicRepos={data.public_repos} />} />
+          <Route path={"/portfolio/projects"} element={<PortfolioPage />} />
           {/*<Route path={"/services"} element={<ServicesPage />} />*/}
           {/*<Route path={"/skills"} element={<SkillsPage />} />*/}
         </Routes>

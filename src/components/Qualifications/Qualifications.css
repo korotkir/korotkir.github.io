@@ -65,7 +65,7 @@ hr {
   color: #DBDBDB;
 }
 
-.Tabs__work, .Tabs__education {
+.Tabs__work, .Tabs__education, .Tabs__course {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

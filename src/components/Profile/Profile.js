@@ -16,8 +16,8 @@ const Profile = (props) => {
         <p className="profile__description">{AboutMe.brief}</p>
       </div>
       <div className="profile__social">
-        <Social socialLink={''} icon={hh_icon}/>
-        <Social socialLink={props.ghLink} icon={github_icon}/>
+        <Social socialLink={'https://stupino.hh.ru/resume/ed77b543ff09ee210c0039ed1f657a71515a71'} icon={hh_icon}/>
+        <Social socialLink='https://github.com/korotkir' icon={github_icon}/>
       </div>
       <a href="mailto:ekoroteev@ya.ru"><CallToActionButton>Написать мне!</CallToActionButton></a>
     </section>

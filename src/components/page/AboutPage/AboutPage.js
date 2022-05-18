@@ -1,7 +1,7 @@
 import './AboutPage.css'
 import About from '../../About/About'
 import Qualifications from '../../Qualifications/Qualifications'
-import {AboutCard, EducationCard, WorkCard} from '../../../Portfolio'
+import {AboutCard, CourseCard, EducationCard, WorkCard} from '../../../Portfolio'
 
 const AboutPage = (props) => {
   return (
@@ -10,6 +10,7 @@ const AboutPage = (props) => {
       <Qualifications
         education={EducationCard}
         work={WorkCard}
+        course={CourseCard}
       />
     </main>
   )
