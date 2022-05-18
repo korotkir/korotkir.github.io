@@ -1,6 +1,7 @@
 .menu__link {
   text-decoration: none;
   position: relative;
+  color: #5671A6;
 }
 .menu__link:visited {
   color: #5671A6;
