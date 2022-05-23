@@ -6,6 +6,8 @@ import quiz from './components/UI/PortfolioSlider/screens/quiz.png'
 import excel from './components/UI/PortfolioSlider/screens/excel.png'
 import calculate from './components/UI/PortfolioSlider/screens/calculate.png'
 import snake from './components/UI/PortfolioSlider/screens/snake.png'
+import travel from './components/UI/PortfolioSlider/screens/travel.png'
+import formular from './components/UI/PortfolioSlider/screens/formular.png'
 
 
 export const AboutMe = {
@@ -16,7 +18,7 @@ export const AboutMe = {
 
 export const AboutCard = [
   // {icon: <Fire />, title: 'Созданных репозиториев', total: 6},
-  {icon: <Books />, title: 'Выполненных pet-проектов', total: 6},
+  {icon: <Books />, title: 'Выполненных pet-проектов', total: 8},
   {icon: <Home />, title: 'Лет изучения', total: 2},
 ]
 
@@ -65,5 +67,17 @@ export const yourPortfolio = [
     projectDesc: 'Игра змейка на нативном JS',
     projectScreen: snake,
     link: 'https://korotkir.github.io/snake/'
+  },
+  {
+    projectName: 'Путешествие по России',
+    projectDesc: 'Верстка адаптивного сайта',
+    projectScreen: travel,
+    link: 'https://korotkir.github.io/travel_across_russia/'
+  },
+  {
+    projectName: 'Формуляр',
+    projectDesc: 'Простое приложение для расчета часов по формулярам оборудования',
+    projectScreen: formular,
+    link: 'https://korotkir.github.io/formular/'
   },
 ]
