@@ -1,14 +1,16 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.e845108a.css",
-    "main.js": "/portfolio/static/js/main.9711a1da.js",
+    "main.js": "/portfolio/static/js/main.5c1a60eb.js",
     "static/js/787.f6e65957.chunk.js": "/portfolio/static/js/787.f6e65957.chunk.js",
     "static/media/quiz.png": "/portfolio/static/media/quiz.47db75009568e9847184.png",
+    "static/media/travel.png": "/portfolio/static/media/travel.c8aa026bcbcfe326c4d5.png",
     "static/media/calculate.png": "/portfolio/static/media/calculate.49c22107e6a80a958c3c.png",
     "static/media/todo.png": "/portfolio/static/media/todo.63aee37a8ba605a70196.png",
     "static/media/excel.png": "/portfolio/static/media/excel.53a0a3331c5253f73377.png",
     "static/media/snake.png": "/portfolio/static/media/snake.45b96fcf78fef291b070.png",
     "static/media/bg.png": "/portfolio/static/media/bg.04e110502e9ecf2bb64b.png",
+    "static/media/formular.png": "/portfolio/static/media/formular.dbf10e77a56d2b6ba1f3.png",
     "static/media/github_icon.svg": "/portfolio/static/media/github_icon.d103a7afce627c85f226d0b9aaaed783.svg",
     "static/media/fire.svg": "/portfolio/static/media/fire.531f609893aca6dca61e43e86804558c.svg",
     "static/media/books.svg": "/portfolio/static/media/books.59651ddc35ca872bfbc3204a0e352ecc.svg",
@@ -26,11 +28,11 @@
     "static/media/active.svg": "/portfolio/static/media/active.490f34a688b7c46894e91dd0f10b2c9d.svg",
     "static/media/non-active.svg": "/portfolio/static/media/non-active.78fd7dcd25dbe5a1c6d9aad7a427dc69.svg",
     "main.e845108a.css.map": "/portfolio/static/css/main.e845108a.css.map",
-    "main.9711a1da.js.map": "/portfolio/static/js/main.9711a1da.js.map",
+    "main.5c1a60eb.js.map": "/portfolio/static/js/main.5c1a60eb.js.map",
     "787.f6e65957.chunk.js.map": "/portfolio/static/js/787.f6e65957.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e845108a.css",
-    "static/js/main.9711a1da.js"
+    "static/js/main.5c1a60eb.js"
   ]
 }
