@@ -3,7 +3,7 @@ import Header from './components/Header/Header'
 import Profile from './components/Profile/Profile'
 import AboutPage from './components/page/AboutPage/AboutPage'
 import {useEffect, useState} from 'react'
-import {Navigate, Redirect, Route, Routes} from 'react-router-dom'
+import {Navigate, Route, Routes} from 'react-router-dom'
 import PortfolioPage from './components/page/PortfolioPage/PortfolioPage'
 import ServicesPage from './components/page/ServicesPage/ServicesPage'
 import SkillsPage from './components/page/SkillsPage/Skills Page'
@@ -14,38 +14,40 @@ const user = 'korotkir'
 
 function App() {
 
-  const [data, setData] = useState({})
+  // const [data, setData] = useState({})
 
-  useEffect(() => {
-    const getGithub = async () => {
-      await fetch(`https://api.github.com/users/${user}`, {
-        headers: {
-          authorization: `token ${clientID}`
-        }
-      })
-        .then((data) => {
-          return data.json()
-        })
-        .then((data) => setData(data))
-    }
-
-    getGithub()
-      .catch((e) => console.log(e))
-
-  }, [])
-
-
+  // useEffect(() => {
+  //   const getGithub = async () => {
+  //     await fetch(`https://api.github.com/users/${user}`, {
+  //       headers: {
+  //         authorization: `token ${clientID}`
+  //       }
+  //     })
+  //       .then((data) => {
+  //         return data.json()
+  //       })
+  //       .then((data) => setData(data))
+  //   }
+  //
+  //   getGithub()
+  //     .catch((e) => console.log(e))
+  //
+  // }, [])
 
   return (
     <div className="App">
       <Header />
       <main className='container'>
-        <Profile ghLink={data.html_url}/>
+        <Profile
+          // ghLink={data.html_url}
+        />
         <Routes>
-          <Route path='*' element={<NotFound />} />
-          <Route exact path="/" element={<Navigate replace to="/portfolio/main" />} />
-          <Route exact path={"/portfolio/main"} element={<AboutPage publicRepos={data.public_repos} />} />
+          <Route exact path="/portfolio/" element={<Navigate replace to="/portfolio/main" />} />
+          <Route exact path={"/portfolio/main"} element={<AboutPage
+            // publicRepos={data.public_repos}
+          />} />
           <Route exact path={"/portfolio/projects"} element={<PortfolioPage />} />
+          <Route path='*' element={<NotFound />} />
           {/*<Route path={"/services"} element={<ServicesPage />} />*/}
           {/*<Route path={"/skills"} element={<SkillsPage />} />*/}
         </Routes>

@@ -1,11 +1,12 @@
 import './About.css'
 import AboutCard from '../UI/Cards/AboutCard/AboutCard'
+import {AboutDesc} from '../../Portfolio'
 
 
 const About = (props) => (
   <section className='About__about'>
     <h1>Обо мне</h1>
-    <p>Занимаюсь веб-разработкой 2 года. Разбираюсь в большинстве актуальных технологий.</p>
+    <p>{AboutDesc}</p>
 
     <div className="About__cards">
       {

@@ -9,17 +9,24 @@ import snake from './components/UI/PortfolioSlider/screens/snake.png'
 import travel from './components/UI/PortfolioSlider/screens/travel.png'
 import formular from './components/UI/PortfolioSlider/screens/formular.png'
 
-
 export const AboutMe = {
   name: 'Коротеев Кирилл',
   carrier: 'Junior Frontend Developer',
-  brief: 'ReactJS, Redux, HTML, CSS (Sass), CSS Framework (Bootstrap, Materialize).',
+  brief: 'JavaScript, ReactJS, Redux, HTML, CSS (Sass), Bootstrap, Bem',
 }
+
+function calculateTrainingDate(startTraining) {
+  const start = new Date(startTraining)
+  const now = new Date()
+  return now.getFullYear() - start.getFullYear()
+}
+
+export const AboutDesc = 'Около двух лет обучаюсь фронтенд-разработке. Специализируюсь на ReactJS.'
 
 export const AboutCard = [
   // {icon: <Fire />, title: 'Созданных репозиториев', total: 6},
   {icon: <Books />, title: 'Выполненных pet-проектов', total: 8},
-  {icon: <Home />, title: 'Лет изучения', total: 2},
+  {icon: <Home />, title: 'Лет изучения', total: calculateTrainingDate('2020-08-01')},
 ]
 
 export const EducationCard = [
@@ -34,7 +41,7 @@ export const WorkCard = [
 
 export const CourseCard = [
   {position: 'React JS. Практический курс.', organization: 'Udemy', years: '2022'},
-  {position: 'Продвинутый JavaScript. Создаем Excel без фреймворков.', organization: 'Минин В.', years: '2022'}
+  {position: 'Создаем Excel без фреймворков.', organization: 'Минин В.', years: '2022'}
 ]
 
 export const yourPortfolio = [

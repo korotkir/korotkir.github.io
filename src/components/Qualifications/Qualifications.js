@@ -1,6 +1,7 @@
 import './Qualifications.css'
 import {ReactComponent as Work} from '../UI/Icons/work.svg'
 import {ReactComponent as Educations} from '../UI/Icons/educations.svg'
+import {ReactComponent as Books} from '../UI/Icons/books.svg'
 import JobCard from '../UI/Cards/JobCard/JobCard'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 //import 'react-tabs/style/react-tabs.css';
@@ -30,6 +31,12 @@ const Qualifications = (props) => {
           <Work className="Tabs__icon"/>
           <span className="Tabs__title">Работа</span>
         </Tab>
+        {/*<Tab*/}
+        {/*  className="Tabs__Course Tabs__button"*/}
+        {/*>*/}
+        {/*  <Books className="Tabs__icon"/>*/}
+        {/*  <span className="Tabs__title">Курсы</span>*/}
+        {/*</Tab>*/}
 
 
       </TabList>
@@ -51,6 +58,19 @@ const Qualifications = (props) => {
       <TabPanel className="Tabs__work">
         {
           props.work.map((el, i) => {
+            return <JobCard
+              key={i}
+              position={el.position}
+              location={el.location}
+              organization={el.organization}
+              years={el.years}
+            />
+          })
+        }
+      </TabPanel>
+      <TabPanel className="Tabs__course">
+        {
+          props.course.map((el, i) => {
             return <JobCard
               key={i}
               position={el.position}
