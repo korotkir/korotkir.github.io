@@ -42,7 +42,7 @@ function App() {
           // ghLink={data.html_url}
         />
         <Routes>
-          <Route exact path="/portfolio/" element={<Navigate replace to="/portfolio/main" />} />
+          <Route exact path="/" element={<Navigate replace to="/portfolio/main" />} />
           <Route exact path={"/portfolio/main"} element={<AboutPage
             // publicRepos={data.public_repos}
           />} />
